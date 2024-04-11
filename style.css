@@ -11,7 +11,20 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #fafafa;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
+.texto {
+    text-align: center;
+    margin-top: 20px; /* Ajuste conforme necessário */
+    margin-bottom: 20px; /* Ajuste conforme necessário */
+    color: #333; /* Alterada a cor do texto */
 }
 
 .title {
@@ -23,9 +36,8 @@ body {
 .description {
     font-size: 16px;
     color: #666;
-    margin-bottom: 40px;
+    margin-bottom: 20px; /* Reduzida a margem inferior */
 }
-
 
 .login-container {
     background-color: #fff;
@@ -41,11 +53,9 @@ body {
     width: 180px;
     padding: 10px;
     margin-bottom: 10px;
-    
-
 }
 
-.login-form input{
+.login-form input {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -67,14 +77,12 @@ body {
     margin:  15px 0;
     display: flex;
     align-items: center;
-
 }
 
 .divider::before, .divider::after {
     content: '';
     flex: 1;
     border-top: 1px solid #dbdbdb;
-
 }
 
 .ou {
